@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .align-element {
+      @apply mx-auto max-w-6xl px-8;
+    }
+
+    /* Grid */
+    .grid-view{
+      @apply card w-full;
+    }
+    .grid-view .figure{
+      @apply px-4 pt-4;
+    }
+    .grid-view .figure img{
+      @apply rounded-xl h-64 md:h-48 w-full object-cover;
+    }
+    .grid-view .details{
+      @apply card-body items-center text-center;
+    }
+    .grid-view .details h2{
+      @apply card-title capitalize tracking-wider;
+    }
+    .grid-view .details h4{
+      @apply capitalize text-neutral-content;
+    }
+    .grid-view .details p{
+      @apply text-secondary;
+    }
+    .grid-view .color-bag{
+      @apply card-body items-center text-center mt-0 pt-0;
+    }
+    .grid-view .description{
+      @apply hidden;
+    }
+    .grid-view .g-btn{
+      @apply btn-md;
+    }
+    /* list view */
+    
+    .list-view {
+      @apply p-8 flex flex-col sm:flex-row gap-y-4 justify-between;
+    }
+    .list-view .link-class{
+      @apply flex flex-col sm:flex-row gap-y-4 bg-base-100 flex-nowrap basis-4/5;
+    }
+    .list-view img{
+      @apply h-24 w-24 rounded-lg sm:h-32 sm:w-32 object-cover group-hover:scale-105 transition duration-300;
+    }
+    .list-view .details{
+      @apply ml-0 sm:ml-12;
+    }
+    .list-view .details h2{
+      @apply capitalize font-medium text-lg;
+    }
+    .list-view .details h4{
+      @apply capitalize text-neutral-content;
+    }
+    .list-view .details p{
+      @apply font-medium ml-0 sm:ml-auto text-lg;
+    }
+    .list-view .color-bag{
+      @apply basis-1/5 text-center m-auto;
+    }
+    .list-view .g-btn{
+      @apply btn-sm m-2;
+    }
+  }  
